@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <!-- ビューポート設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- タイトルと説明 -->
+    <title>〇フェリー(架空)</title>
+    <meta name="description" content="これは架空のフェリー会社のページです。実在のサービスや情報とは無関係です。ポートフォリオ用の〇島プロジェクトの一環です。">
+
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+
+    <!-- リセットcss -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!--Font Awesome読み込み-->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--css読み込み-->
+    <link rel="stylesheet" href="css/sample_ma_ru_ferries.css">
+  </head>
+
+  <body>
+    <!--#header-------------------------->
+    <header id="header">
+      <div class="flex">
+        <h1 class="logo">
+          <a href="#">〇フェリー(架空)</a>
+        </h1>
+
+        <div>
+          <nav>
+            <ul class="menu flex_list">
+              <li><a href="#time_table">時刻表</a></li>
+              <li><a href="#fare">運賃</a></li>
+              <li><a href="#terminal">乗り場案内</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--main----------------------------->
+    <main>
+      <div id="mainvisual">
+        <img src="img/sample_ma_ru_ferries_mainvisual_pexels-ebrart-19215726.jpg" alt="運行中のフェリー">
+      </div>
+
+      <!--.container----------------------->
+      <div class="container">
+        <div class="flex">
+          <div class="flex_left">
+            <!-- 3隻のフェリーで運行しています -->
+            <div id="time_table">
+              <h2>時刻表（所要時間30分）</h2>
+              <table class="time_table">
+                <thead>
+                  <tr>
+                    <th>◆港発</th><th>〇港発</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>6:00</td><td>6:30</td></tr>
+                  <tr><td>7:00</td><td>7:30</td></tr>
+                  <tr><td>8:00</td><td>8:30</td></tr>
+                  <tr><td>9:00</td><td>9:30</td></tr>
+                  <tr><td>10:00</td><td>10:30</td></tr>
+                  <tr><td>11:00</td><td>11:30</td></tr>
+                  <tr><td>12:00</td><td>12:30</td></tr>
+                  <tr><td>13:00</td><td>13:30</td></tr>
+                  <tr><td>14:00</td><td>14:30</td></tr>
+                  <tr><td>15:00</td><td>15:30</td></tr>
+                  <tr><td>16:00</td><td>16:30</td></tr>
+                  <tr><td>17:00</td><td>17:30</td></tr>
+                  <tr><td>18:00</td><td>18:30</td></tr>
+                  <tr><td>19:00</td><td>19:30</td></tr>
+                  <tr><td>20:00</td><td>20:30</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="flex_right">
+            <div id="fare">
+              <h2>運賃</h2>
+              <ul>
+                <li>大人･･･600円(片道)</li>
+                <li>子供･･･300円(片道)</li>
+              </ul>
+              <ul>
+                <li>自転車･･･＋100円(片道)</li>
+                <li>自動二輪車･･･＋200円(片道)</li>
+                <li>車両（6ｍまで）･･･＋2000円(片道)</li>
+                <li class="normal_layout_text">※6ｍを超える車両については、別途お問い合わせ下さい。</li>
+                <li class="smart_phone_layout_text">※6ｍを超える車両については<br>別途お問い合わせ下さい。</li>
+              </ul>
+            </div>
+
+            <div id="terminal">
+              <h2>乗り場案内</h2>
+              <ul>
+                <li>
+                  <h3><strong>◆港</strong></h3>
+                  <ul class="diamond_port_information">
+                    <li>住所: 〒〇〇〇-〇〇〇〇 〇〇市〇町〇-〇-〇</li>
+                    <li>電話番号: 〇〇-〇〇〇〇-〇〇〇〇</li>
+                    <li>※7番乗り場から出港</li>
+                  </ul>
+                  <h3><strong>〇港</strong></h3>
+                  <ul class="ma_ru_port_information">
+                    <li>住所: 〒〇〇〇-〇〇〇〇 〇〇市〇町〇-〇-〇</li>
+                    <li>電話番号: 〇〇-〇〇〇〇-〇〇〇〇</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div id="contact">
+              <h2>お問い合わせ</h2>
+              <p class="normal_layout_text">乗り場案内に記載している各港。もしくは、〇フェリー本社にて承ります。</p>
+              <p class="smart_phone_layout_text">乗り場案内に記載している各港。<br>もしくは、〇フェリー本社にて承ります。</p>
+              <h3><strong><p>〇フェリー本社</strong></h3>
+              <p>電話番号: 〇〇-〇〇〇〇-〇〇〇〇</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!--#footer-------------------------->
+    <footer id="footer">
+      <p class="normal_layout_copyright">&copy; 2024 fumima_ru | 2024.1.31_upload<!--  | (last_updated_2024.〇.〇) --></p>
+      <p class="smart_phone_layout_copyright">&copy; 2024 fumima_ru<br>2024.1.31_upload<!--  (last_updated_2024.〇.〇) --></p>
+    </footer>
+      
+  </body>
+</html>
