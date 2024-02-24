@@ -136,6 +136,27 @@
       <p class="normal_layout_copyright">&copy; 2024 fumima_ru | 2024.1.31_upload<!--  | (last_updated_2024.〇.〇) --></p>
       <p class="smart_phone_layout_copyright">&copy; 2024 fumima_ru<br>2024.1.31_upload<!--  (last_updated_2024.〇.〇) --></p>
     </footer>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+
+          let header = document.querySelector('#header');
+          let mainvisual = document.querySelector('#mainvisual img');
+
+          // ヘッダーの高さを取得してmainvisualのマージンを設定
+          function setMainvisualMargin() {
+              let headerHeight = header.offsetHeight;
+              mainvisual.style.marginBottom = - headerHeight + 'px';
+          }
+
+          // ページ読み込み時とウィンドウのリサイズ時にマージンを再設定
+          window.addEventListener('load', setMainvisualMargin);
+          window.addEventListener('resize', setMainvisualMargin);
+
+          // 初回設定
+          setMainvisualMargin();
+      });
+    </script>
       
   </body>
 </html>
